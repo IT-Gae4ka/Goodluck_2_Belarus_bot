@@ -2,9 +2,8 @@ import telebot
 from telebot import types
 from questions import EnglishQuestions
 import logging
-from settings import bot_api
 
-bot = telebot.TeleBot(bot_api)
+bot = telebot.TeleBot(bot_token)
 
 
 logging.basicConfig(level=logging.INFO)
