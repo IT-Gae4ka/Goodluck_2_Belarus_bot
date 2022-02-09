@@ -2,8 +2,11 @@ import telebot
 from telebot import types
 from questions import EnglishQuestions
 import logging
+from boto.s3.connection import S3Connection
 
+s3 = S3Connection(os.environ['bot_token'])
 bot = telebot.TeleBot(bot_token)
+
 
 
 logging.basicConfig(level=logging.INFO)
