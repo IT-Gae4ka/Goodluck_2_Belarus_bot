@@ -9,6 +9,7 @@ s3 = S3Connection(os.environ['bot_token'])
 bot = telebot.TeleBot(bot_token)
 
 
+
 logging.basicConfig(level=logging.INFO)
 user_dict = {"test_started":"False",
 			"test_finished":"False",
