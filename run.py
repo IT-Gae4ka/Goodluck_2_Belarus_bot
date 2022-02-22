@@ -6,7 +6,7 @@ from boto.s3.connection import S3Connection
 import os
 print(os.environ)
 
-s3 = S3Connection(os.environ['bot_token'])
+#s3 = S3Connection(os.environ['bot_token'])
 bot = telebot.TeleBot(bot_token)
 
 logging.basicConfig(level=logging.INFO)
