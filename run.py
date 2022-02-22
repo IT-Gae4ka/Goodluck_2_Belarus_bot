@@ -7,7 +7,7 @@ import os
 print(os.environ)
 
 #s3 = S3Connection(os.environ['bot_token'])
-bot = telebot.TeleBot(bot_token)
+bot = telebot.TeleBot(os.environ['bot_token'])
 
 logging.basicConfig(level=logging.INFO)
 user_dict = {"test_started":"False",
